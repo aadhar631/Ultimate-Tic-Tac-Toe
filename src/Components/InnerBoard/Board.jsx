@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Square from './Square';
 import Winner from './Winner';
+// Inner Board
 
 function Board(props) {
     // Initialize the state for the board squares
