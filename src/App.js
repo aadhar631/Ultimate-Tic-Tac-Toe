@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// Import the required modules and components
+import styled from 'styled-components';  // CSS-in-JS library for styling
+import StartGame from './Components/StartGame/StartGame'; // Import the StartGame component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppStyled>
+      <StartGame />  {/* Render the StartGame component */}
+    </AppStyled>
   );
 }
 
-export default App;
+const AppStyled = styled.div`
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100vw;  
+  height: 100vh;  
+  background-color: #081b29; 
+  overflow: hidden; 
+`;
+
+export default App;  
